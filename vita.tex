@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
 \def\myauthor{Alex Jackson}
 \def\mytitle{Resume}
@@ -22,6 +22,7 @@
 %\usepackage{ocgtools}
 \usepackage{enumitem}
 \setlist{nolistsep,leftmargin=0.15in}
+\usepackage{booktabs}
 \usepackage[log-declarations=false]{xparse}
 \usepackage[adobe-garamond]{mathdesign}
 \usepackage[no-math]{fontspec}
@@ -56,7 +57,7 @@
 \thispagestyle{empty}
 \begin{adjustwidth}{-1in}{}
 {\Huge
-  {\textsc{%
+  {\textsc\textsf{%
     {\addfontfeature{Style=TitlingCaps}A}\kern-1.5ptlex
     {\addfontfeature{Style=TitlingCaps}J}\kern-2pt.~%
     {\addfontfeature{Style=TitlingCaps}J}ackson}
@@ -82,6 +83,21 @@
 \setlength\marginparwidth{0.85in}
 \smallskip
 \mhead{Education}%
+\textbf{University of Leeds}, United Kingdom \newline
+\emph{MGeophys, BSc Geophysical Sciences} \rdate{2013--2017 (Exp.)}
+\begin{itemize*}
+\item Dissertation title: Evaluating the potential of using ground based weather
+  radar for InSAR atmospheric corrections
+\item Supervisors: Prof.~Andy Hooper and Tom Ingleby
+\end{itemize*}
+
+\medskip
+\textbf{University of Alberta}, Canada \newline
+\emph{Study Abroad Year} \rdate{2015--2016}
+
+\medskip
+\textbf{Calday Grange Grammar School Sixth Form}, United Kingdom \newline
+\emph{A2 Maths, Physics and Geography} \rdate{2011--2013}
 
 \bigskip
 \end{document}
