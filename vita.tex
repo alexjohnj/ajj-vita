@@ -40,9 +40,12 @@
   pdfkeywords={\mykeywords}
 ]{hyperref}
 
+\setmainfont{Cardo}
+\setsansfont{Cabin-Regular}
+
 \newcommand{\ML}{\textsc{Matlab}}
 
-\newcommand{\mhead}[1]{\leavevmode\marginpar{\sffamily\footnotesize #1}}
+\newcommand{\mhead}[1]{\leavevmode\marginpar{\scshape\sffamily\small #1}}
 \newcommand{\rdate}[1]{{\addfontfeature{Numbers=OldStyle} \hfill #1}}
 \renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
 \renewcommand{\labelitemi}{-}
@@ -53,11 +56,11 @@
 
 \begin{document}\flushbottom
 \pagestyle{fancy} \setlength\headwidth{6.5in}
-\rhead{\textsc{paul d.~gessler—r\'{e}sum\'{e}—\thepage{} of \pageref*{LastPage}}} \cfoot{}
+% \rhead{\textsc{paul d.~gessler—r\'{e}sum\'{e}—\thepage{} of \pageref*{LastPage}}} \cfoot{}
 \thispagestyle{empty}
 \begin{adjustwidth}{-1in}{}
 {\Huge
-  {\textsc\textsf{%
+  {\sffamily\textsc{%
     {\addfontfeature{Style=TitlingCaps}A}\kern-1.5ptlex
     {\addfontfeature{Style=TitlingCaps}J}\kern-2pt.~%
     {\addfontfeature{Style=TitlingCaps}J}ackson}
