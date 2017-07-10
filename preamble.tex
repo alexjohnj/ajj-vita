@@ -1,0 +1,50 @@
+\setlength\parindent{0pt}
+
+\newenvironment{itemize*}%
+{\begin{itemize}%
+    \setlength{\itemsep}{0pt}}%
+  {\end{itemize}}
+
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+% \usepackage{ocgtools}
+\usepackage{enumitem}
+\setlist{nolistsep,leftmargin=0.15in}
+\usepackage{booktabs}
+\usepackage[log-declarations=false]{xparse}
+\usepackage[adobe-garamond]{mathdesign}
+\usepackage[no-math]{fontspec}
+\usepackage{color}
+\usepackage{microtype}
+\usepackage[a4paper,top=30mm,right=25.4mm,left=50.8mm]{geometry}
+\usepackage[strict]{changepage}
+\usepackage[
+ocgcolorlinks,
+urlcolor={[rgb]{0,0,0.54}},
+unicode,
+plainpages=false,
+pdfpagelabels,
+pdftitle={\mytitle},
+pdfauthor={\myauthor},
+pdfkeywords={\mykeywords}
+]{hyperref}
+
+\setmainfont{Cardo}
+\setsansfont{Cabin-Regular}
+
+\newcommand{\ML}{\textsc{Matlab}}
+
+\newcommand{\mhead}[1]{\leavevmode\marginpar{\scshape\sffamily\small #1}}
+\newcommand{\rdate}[1]{{\addfontfeature{Numbers=OldStyle} \hfill #1}}
+\renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
+\renewcommand{\labelitemi}{-}
+
+\makeatletter % fix for \hrulefill w/ mathdesign package
+\def\hrulefill{\leavevmode\leaders \hrule height \rulethickness \hfill\kern\z@}
+\makeatletter
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "vita"
+%%% End:

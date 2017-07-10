@@ -18,7 +18,7 @@
 
 # Main TeX file WITHOUT extension
 MAIN = vita
-PREAMBLE =
+PREAMBLE = preamble.tex
 # No references? Just assign this to nothing.
 BIB_FILE =
 
