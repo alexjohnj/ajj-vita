@@ -13,31 +13,32 @@
 
 \newenvironment{itemize*}%
 {\begin{itemize}%
-  \setlength{\itemsep}{0pt}}%
-{\end{itemize}}
+    \setlength{\itemsep}{0pt}}%
+  {\end{itemize}}
 
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-%\usepackage{ocgtools}
+% \usepackage{ocgtools}
 \usepackage{enumitem}
 \setlist{nolistsep,leftmargin=0.15in}
 \usepackage{booktabs}
 \usepackage[log-declarations=false]{xparse}
 \usepackage[adobe-garamond]{mathdesign}
 \usepackage[no-math]{fontspec}
+\usepackage{color}
 \usepackage{microtype}
 \usepackage[a4paper,top=30mm,right=25.4mm,left=50.8mm]{geometry}
 \usepackage[strict]{changepage}
 \usepackage[
-  ocgcolorlinks,
-  urlcolor={[rgb]{0,0,0.54}},
-  unicode,
-  plainpages=false,
-  pdfpagelabels,
-  pdftitle={\mytitle},
-  pdfauthor={\myauthor},
-  pdfkeywords={\mykeywords}
+ocgcolorlinks,
+urlcolor={[rgb]{0,0,0.54}},
+unicode,
+plainpages=false,
+pdfpagelabels,
+pdftitle={\mytitle},
+pdfauthor={\myauthor},
+pdfkeywords={\mykeywords}
 ]{hyperref}
 
 \setmainfont{Cardo}
@@ -59,28 +60,28 @@
 % \rhead{\textsc{paul d.~gessler—r\'{e}sum\'{e}—\thepage{} of \pageref*{LastPage}}} \cfoot{}
 \thispagestyle{empty}
 \begin{adjustwidth}{-1in}{}
-{\Huge
-  {\sffamily\textsc{%
-    {\addfontfeature{Style=TitlingCaps}A}\kern-1.5ptlex
-    {\addfontfeature{Style=TitlingCaps}J}\kern-2pt.~%
-    {\addfontfeature{Style=TitlingCaps}J}ackson}
+  {\Huge
+    {\sffamily\textsc{%
+        {\addfontfeature{Style=TitlingCaps}A}\kern-1.5ptlex
+        {\addfontfeature{Style=TitlingCaps}J}\kern-2pt.~%
+        {\addfontfeature{Style=TitlingCaps}J}ackson}
+    }
   }
-}
-\hfill\hfill\hfill
-{
-  % Contact Address goes here
-  \begin{minipage}[b]{2in}
-    \flushleft \footnotesize
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{1.2in}
-    \flushright \footnotesize
-    \href{tel:\myphone}{\myphone} \\
-    \href{mailto:\myemail}{\myemail} \\
-    \href{https://www.github.com/\myweb}{\texttt{}}~\href{https://www.linkedin.com/in/\myweb}{\texttt{}~\myweb}
-  \end{minipage}
-}\par
-\hrulefill
+  \hfill\hfill\hfill
+  {
+    % Contact Address goes here
+    \begin{minipage}[b]{2in}
+      \flushleft \footnotesize
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{1.2in}
+      \flushright \footnotesize
+      \href{tel:\myphone}{\myphone} \\
+      \href{mailto:\myemail}{\myemail} \\
+      % \href{https://www.github.com/\myweb}{\texttt{}}~\href{https://www.linkedin.com/in/\myweb}{\texttt{}~\myweb}
+    \end{minipage}
+  }\par
+  \hrulefill
 \end{adjustwidth}
 \reversemarginpar
 \setlength\marginparwidth{0.85in}
@@ -97,10 +98,62 @@
 \medskip
 \textbf{University of Alberta}, Canada \newline
 \emph{Study Abroad Year} \rdate{2015--2016}
+\begin{itemize*}
+\item GPA\@: 3.80/4.00
+\end{itemize*}
 
 \medskip
 \textbf{Calday Grange Grammar School Sixth Form}, United Kingdom \newline
 \emph{A2 Maths, Physics and Geography} \rdate{2011--2013}
+\begin{itemize*}
+\item Grades: A* Geography, A Physics, A Maths
+\end{itemize*}
 
 \bigskip
+
+\mhead{Technical Knowledge}%
+\emph{Proficient}\\
+\ML, Julia, Objective-C, Shell scripting, Unix systems, \LaTeX, Git
+
+\medskip
+
+\emph{Basic Knowledge}\\
+Python, Swift, Go, C, HTML, CSS, JavaScript, GMT, ArcGIS, Seismic Analysis Code,
+Seismic Unix
+
+\bigskip
+
+\mhead{Awards}%
+Dean's List, University of Alberta \rdate{2016} \newline
+SEE Attainment Prize, University of Leeds \rdate{2014, 2015} \newline
+CGGS Accolade for outstanding performance in A-level Geography \rdate{2013}
+
+\bigskip
+
+\mhead{Leadership Experience}%
+\textbf{Leeds University Socialist Students} \rdate{2014--2015} \newline
+\emph{Treasurer}\\
+Responsible for raising funds for the society and managing the society's budget.
+
+\bigskip
+
+\mhead{Independent Projects}%
+\textbf{SACFiles.jl} \rdate{2016} \newline
+A Julia package for reading Seismic Analysis Code files. \\
+\emph{Technologies: Julia, Seismic Analysis Code, Unit Testing}
+
+\medskip
+\textbf{genetic-mt1d} \rdate{2015} \newline
+An implementation of a genetic algorithm that creates 1D inversions of
+magnetotelluric data. Written as part of a graduate signal processing class at
+the University of Alberta. \\
+\emph{Technologies: Julia, Evolutionary Algorithms}
+
+\medskip
+\textbf{Geography AS Notes} \rdate{2012--2016} \newline
+A Geography revision website targeted at UK students reaching
+\textasciitilde{}75,000 users per month. Acted as editor and developer for
+four years. \\
+\emph{Technologies: HTML, CSS, JavaScript, Git, Unix administration}
+
 \end{document}
