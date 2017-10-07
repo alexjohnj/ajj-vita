@@ -53,4 +53,4 @@ watch: $(MAIN).pdf
 
 .PHONY: view
 view: $(MAIN).pdf
-	@open -a "Skim" $(MAIN).pdf
+	@open -a "PDF Expert" $(MAIN).pdf
