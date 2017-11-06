@@ -8,7 +8,6 @@
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-% \usepackage{ocgtools}
 \usepackage{enumitem}
 \setlist{nolistsep,leftmargin=0.15in}
 \usepackage{booktabs}
@@ -31,17 +30,19 @@ pdfauthor={\myauthor},
 pdfkeywords={\mykeywords}
 ]{hyperref}
 
-\setmainfont{Cardo}
-\setsansfont{Cabin-Regular}
+\setmainfont{Source Sans Pro}
+\setsansfont{Source Sans Pro}
 
 \newcommand{\ML}{\textsc{Matlab}}
 
 \definecolor{header}{RGB}{173,16,47}
+\definecolor{keyword}{RGB}{173,16,47}
 
-\newcommand{\mhead}[1]{\leavevmode\marginpar{\scshape\sffamily\small \textcolor{header}{#1}}}
+\newcommand{\mhead}[1]{\leavevmode\marginpar{\scshape\sffamily \textcolor{header}{#1}}}
 \newcommand{\rdate}[1]{{\addfontfeature{Numbers=OldStyle} \hfill #1}}
 \renewcommand{\date}[1]{{\addfontfeature{Numbers=OldStyle} #1}}
 \renewcommand{\labelitemi}{-}
+\DeclareTextFontCommand{\skill}{\bf\color{keyword}}
 
 \makeatletter % fix for \hrulefill w/ mathdesign package
 \def\hrulefill{\leavevmode\leaders \hrule height \rulethickness \hfill\kern\z@}

@@ -1,0 +1,16 @@
+\textbf{Pinnacle} \rdate{2017-} \newline
+\textit{Skills: iOS Development, Swift, Core Data, Concurrent Programming, Testing} \\
+An iOS client for the Pinboard bookmarking service under active development. The
+application maintains an offline copy of a user's bookmarks that it keeps
+synchronised with Pinboard using the web API.
+
+As the Pinboard API can be slow and the synchronisation system has to handle
+tens of thousands of bookmarks, I had to design the app's internals with
+concurrency in mind. Ultimately I used a combination of operation queues and
+dispatch groups to managed concurrency in the network and persistence layers of
+the app.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../vita"
+%%% End:
