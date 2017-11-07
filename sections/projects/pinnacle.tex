@@ -5,9 +5,9 @@ application maintains an offline copy of a user's bookmarks that it keeps
 synchronised with Pinboard using the web API.
 
 The networking and persistence layers of the app are designed to operate
-asynchronously to avoid blocking the user interface. I use a combination of
+asynchronously to avoid blocking the user interface. I used a combination of
 operation queues and dispatch groups to manage concurrency and designed the
-systems with a callback based API. This is creating some maintenance issues so I
+systems with a callback based API. This has created some maintenance issues so I
 am exploring an alternative way of managing asynchrony with promises.
 
 %%% Local Variables:
