@@ -4,11 +4,11 @@ An iOS client for the Pinboard bookmarking service under active development. The
 application maintains an offline copy of a user's bookmarks that it keeps
 synchronised with Pinboard using the web API.
 
-As the Pinboard API can be slow and the synchronisation system has to handle
-tens of thousands of bookmarks, I had to design the app's internals with
-concurrency in mind. Ultimately I used a combination of operation queues and
-dispatch groups to managed concurrency in the network and persistence layers of
-the app.
+The networking and persistence layers of the app are designed to operate
+asynchronously to avoid blocking the user interface. I use a combination of
+operation queues and dispatch groups to manage concurrency and designed the
+systems with a callback based API. This is creating some maintenance issues so I
+am exploring an alternative way of managing asynchrony with promises.
 
 %%% Local Variables:
 %%% mode: latex
