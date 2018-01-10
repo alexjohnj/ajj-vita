@@ -10,11 +10,11 @@
   reuse. This also made the code highly testable and I have written a full suite
   of unit tests for these layers.
 \item I adopted the coordinator pattern for the application's architecture which
-  reduces the complexity of view controllers, improves their testability and
+  reduced the complexity of view controllers, improves their testability and
   augments the standard design patterns of UIKit rather than working against
   them.
 \item I implemented persistence using Core Data and spent significant time in
-  instruments profiling the memory usage and timing of the app's sync code. I
+  instruments profiling the memory usage and timing of the app's sync system. I
   have implemented a sync system that can import tens of thousands of bookmarks
   from JSON data within reasonable time and memory constraints. I have written a
   set of automated performance tests to monitor for any regressions.
