@@ -1,14 +1,16 @@
 \textbf{Spotijack} \rdate{2015-2017} \newline
 \textit{Skills Used: macOS Development, Swift, Objective-C, Testing, Git}\\
-\textit{GitHub:} \href{https://github.com/\myweb/spotijack}{alexjohnj/spotijack}\\
-A macOS utility that records music from Spotify using its AppleScript interface
-and Audio Hijack Pro. Originally written in AppleScript, the app was rewritten
-in \mbox{Objective-C} and later Swift using the ScriptingBridge framework.
-
-The app is highly stateful and must keep its state in sync with two external
-applications. By abstracting the interfaces to the external apps into protocols,
-I was able to write automated tests against mock objects to ensure that the app
-could not enter an inconsistent state.
+\textit{GitHub:} \href{https://github.com/\myweb/spotijack}{alexjohnj/spotijack}
+\begin{itemize}[leftmargin=0mm]
+\item A macOS application that records music from Spotify using Audio Hijack
+  Pro's AppleScript interface and the ScriptingBridge framework.
+\item Ported from Objective-C to Swift using Swift's interoperability features
+  to work with the highly dynamic ScriptingBridge framework.
+\item Developed unit tests by writing mocks for Spotify and Audio Hijack Pro's
+  interfaces. This helped identify and fix several bugs in the original
+  Objective-C application and ensured the app could not enter an inconsistent
+  state.
+\end{itemize}
 
 %%% Local Variables:
 %%% mode: latex
