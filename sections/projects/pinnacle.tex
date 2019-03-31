@@ -1,28 +1,11 @@
-\textbf{Pinnacle} \rdate{2017-} \newline
-\textit{Skills Used: iOS Development, Swift, Core Data, Concurrent Programming, Testing}
-%
-\begin{itemize}[leftmargin=0mm]
-\item An iOS client for the Pinboard bookmarking service under active
-  development. It provides a powerful interface for users to read and organise
-  their collection of bookmarks on iPhone and iPad.
-\item Adopted the coordinator pattern for the application's architecture which
-  reduced the complexity of view controllers and improved their testability
-  while augmenting the standard design patterns of UIKit rather than working
-  against them.
-\item Used concurrent networking and persistence APIs throughout the app to
-  maintain an uninterrupted user experience. Asynchronous APIs are managed using
-  promises to improve code readability.
-\item Separated the sync, networking and model code into separate frameworks to
-  ensure that separation of concerns is achieved and to increase code
-  reuse. This made the code highly testable.
-\item Implemented persistence using Core Data, designing a Unicode aware model
-  for efficient fetch requests.
-\item Implemented a sync system that can import tens of thousands of bookmarks
-  from JSON data within reasonable time and memory constraints.
-\item Developed automated performance tests for the sync system to monitor for
-  performance regressions and identify targets for optimisation.
-\item Developed a protocol orientated system for managing network requests.
-\end{itemize}
+\textbf{Pinnacle} \rdate{2017--} \newline
+\textit{Skills Used: Swift, Core Data, Testing, Coordinators}
+
+An iOS client for the Pinboard bookmarking service under active development that
+provides an interface for users to manage their collection of bookmarks. The
+application supports both iPhone and iPad and uses coordinators to manage
+application flows. It uses Core Data for persistence with a suite of unit tests
+and performance tests covering the sync system.
 
 %%% Local Variables:
 %%% mode: latex
