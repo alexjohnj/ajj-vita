@@ -14,7 +14,8 @@
 # The watch task uses [watchman](https://github.com/facebook/watchman) to watch
 # all the files defined in the variables $(MAIN), $(BIB_FILE), $(FIGURES),
 # $(PREAMBLE), $(SECTIONS) and $(OTHER_FILES) running the all task if any of
-# them changes.
+# them changes. To use the watch task, you must install watchman AND pywatchman
+# (which provides the watchman-make command).
 
 # Main TeX file WITHOUT extension
 MAIN = vita
