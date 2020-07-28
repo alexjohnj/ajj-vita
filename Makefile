@@ -28,7 +28,8 @@ FIGURE_DIR = figures
 SECTIONS_DIR = sections
 
 FIGURES = $(wildcard $(FIGURE_DIR)/*.tex $(FIGURE_DIR)/*.pdf)
-SECTIONS = $(wildcard $(SECTIONS_DIR)/*.tex)
+SECTIONS = $(shell find $(SECTIONS_DIR) -type f -name '*.tex')
+
 # Define any other files (e.g., BibLaTeX configuration files) here.
 OTHER_FILES =
 
