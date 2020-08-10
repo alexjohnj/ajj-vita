@@ -32,17 +32,18 @@ SECTIONS = $(shell find $(SECTIONS_DIR) -type f -name '*.tex')
 OTHER_FILES =
 
 LATEX = lualatex
-LATEX_OPTS = --interaction=nonstopmode
-LATEXRUN = latexrun
-LATEXRUN_OPTS = --latex-cmd=$(LATEX) --latex-args="$(LATEX_OPTS)" -O=$(TMP_DIR)
+LATEX_OPTS = --interaction=nonstopmode --file-line-error
+LATEXRUN = latexmk
+LATEXRUN_OPTS = -g -pdf -pdflatex="$(LATEX) $(LATEX_OPTS)" -outdir=$(TMP_DIR)
 
-.PHONY: FORCE
-$(MAIN).pdf: FORCE $(MAIN).tex $(FIGURES) $(SECTIONS) $(OTHER_FILES)
+$(MAIN).pdf: $(MAIN).tex $(FIGURES) $(SECTIONS) $(OTHER_FILES)
 	$(LATEXRUN) $(LATEXRUN_OPTS) $(MAIN).tex
+	cp $(TMP_DIR)/$(MAIN).pdf $(MAIN).pdf
 
 .PHONY: clean
 clean:
-	$(LATEXRUN) --clean-all
+	rm -rf $(TMP_DIR)
+	rm -f $(MAIN).pdf
 
 .PHONY: all
 all: $(MAIN).pdf
